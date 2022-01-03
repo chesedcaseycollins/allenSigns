@@ -271,7 +271,7 @@ footer > section#footer2 > p {
         padding: 0.5em;
     }
 }
-@media(max-width: 350px) {
+@media(max-width: 460px) {
     #mainNav > img {
         display: none;
     }
