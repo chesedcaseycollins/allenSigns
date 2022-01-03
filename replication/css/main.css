@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    text-shadow: 0 0 0.1em black;
+}
+html {
+    font-size: 16px;
+}
+body {
+    background-image: url("../images/background.jpg");
+    display: grid;
+    grid-template-columns: 1fr minmax(20em, 60em) 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#paperPage {
+    box-shadow: 0 0 2em black;
+    grid-column: 2/3;
+    display: grid;
+}
+nav {
+    width: 100%;
+    background: url("../images/menu.png") 0 100% repeat;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+}
+#mainNav{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto min-content;
+}
+#mainNav > span {
+    background: url("../images/topMenu.png");
+}
+#mainNav > ul {
+    display: grid;   
+    grid-template-columns: repeat(7, auto);
+}
+#mainNav > ul > li {
+    text-align: center;
+    display: grid;
+}
+#mainNav > ul > li:nth-of-type(1) {
+    grid-column: 1/2;
+}
+#mainNav > ul > li:nth-of-type(2) {
+    grid-column: 2/3;
+}
+#mainNav > ul > li:nth-of-type(3) {
+    grid-column: 3/4;
+}
+#mainNav > ul > li:nth-of-type(4) {
+    grid-column: 4/5;
+}
+#mainNav > ul > li:nth-of-type(5) {
+    grid-column: 5/6;
+}
+#mainNav > ul > li:nth-of-type(6) {
+    grid-column: 6/7;
+}
+#mainNav > ul > li:nth-of-type(7) {
+    grid-column: 7/8;
+}
+#mainNav > ul > span {
+    height: 100%;
+    width: 100%;
+    grid-column: 1/8;
+    grid-row: 2/3;
+    background: #0000007c;
+    z-index: -1;
+}
+#mainNav > ul > li.tab {
+    box-shadow: 0 0 0.8em #000000a2 inset;
+}
+#mainNav >ul > li > a {
+    padding: 1.3em 0;
+    display: grid;
+    color: #CBCBD3;
+    text-transform: uppercase;
+}
+#secondaryNav{
+    background: #222224;
+}
+.navSubItems {
+    display: none;
+}
+#paperPage > img {
+    width: 100%;
+    height: min-content;
+}
+#options{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#options > section{
+    padding: 1em;
+    box-shadow: 0 0 0.2em #000000a2 inset;
+}
+#options > section:nth-of-type(1) {
+    background: #B90000;
+}
+#options > section:nth-of-type(2) {
+    background: #252525;
+}
+#options > section:nth-of-type(3) {
+    background: #ffffff;
+    text-shadow: none;
+}
+#options > section:nth-of-type(3) p, #options > section:nth-of-type(3) h2, #options > section:nth-of-type(3) h2 span, #options > section:nth-of-type(1) h2{
+    text-shadow: none;
+}
+#body{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 1em;
+    background: #ffffff;
+}
+#body > article > img {
+    float: left;
+    padding: 1em;
+}
+#body > article > p {
+    text-shadow: none;
+    line-height: 1.2em;
+    padding: 0 0 1em 1em;
+    font-size: 0.9rem;
+}
+#body > article > span {
+    padding: 1em 1em 1em 1rem;
+    display: grid;
+}
+#body > article > span > p {
+    padding: 0 0 1em 0;
+    text-shadow: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+h1{
+    padding: 1em 1em 1em 1rem;
+    text-shadow: none;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+}
+h2{
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1rem;
+}
+footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: min-content min-content;
+    background: #252525;
+}
+footer > section {
+    grid-row: 1/2;
+    padding: 1em;
+    box-shadow: 0 0 0.2em #000000a2 inset;
+}
+footer section {
+    display: grid;
+}
+footer > section > section >span {
+    font-size: 0.8rem;
+}
+footer > section#footer2 {
+    color: #5A5C5E;
+    font-size: 0.65rem;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: 3fr 2fr;
+    grid-template-columns: 1fr 1fr;
+}
+footer > section#footer2 > ul {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+}
+footer > section#footer2 > p{
+    grid-column: 1/2;
+} 
+.bottomPadding {
+    padding: 0 0 1em 0;
+}
+.red {
+    color: #B90000;
+}
+.lightGray {
+    color: #A7A7AC;
+}
+.white {
+    color: #ffffff;
+}
+.gray {
+    color: #7A7A81;
+}
