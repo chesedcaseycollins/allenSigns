@@ -13,22 +13,22 @@ body {
     width: 100%;
 }
 h1 {
-    padding: 0 0 0.7em 0;
+    padding: 0 1em 0.7em 1em;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
+    font-size: 4rem;
 }
 h2 {
     width: 100%;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 h3 {
     width: 100%;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
 }
 p {
     font-size: 1rem;
@@ -118,7 +118,7 @@ li.active {
 }
 #hArticle > p {
     line-height: 1.5em;
-    padding: 0 0 1em 1em;
+    padding: 0 1em 1em 1em;
 }
 #ps {
     margin: 0 3em;
@@ -128,11 +128,12 @@ li.active {
     padding: 1em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 1fr;
     gap: 1em;
     width: 100%;
 }
 #ps > ul > li {
-    padding: 1em;
+    padding: 1.5em;
     box-shadow: 0 0 0.8em #b4b2b2;
     border-radius: 0.18em;
     overflow: hidden;
@@ -142,8 +143,16 @@ li.active {
     color: #CBCBD3;
 }
 #ps > ul > li > p {
-    padding: 1em;
+    padding: 1.5em 0 1em 0;
     line-height: 1.2;
+}
+#ps > ul > li > button {
+    padding: 0.3em 0.8em;
+    margin: 0.2em 0 1em 0;
+    width: max-content;
+    border: #f1f1eb solid;
+    border-radius: 0.8em;
+    box-shadow: 0 0 0.2em #000000;
 }
 #catalog {
     margin: 1em;
@@ -242,23 +251,45 @@ footer > section#footer2 > p {
     #mainNav {
         grid-template-rows: 1fr;
     }
+    #mainNav {
+        box-shadow: 0 0 0.5em black;
+    }
     #mainNav > ul {
         display: none;
     }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
 }
 @media(max-width: 655px) {
+    nav {
+        padding: 0 0 1em 0;
+    }
     #showcase {
         display: none;
+    }
+    #hArticle{
+        justify-self: start;
+        padding: 3em 3em 1em 3em;
+    }
+    h1 {
+        padding: 0 0 0.5em 0;
     }
     h1 > span#asc, h1 > span#dash {
         display: none;
     }
-    nav {
-        padding: 0 0 1em 0;
-    }
 }
-@media(max-width: 550px) {
-    body > article > p {
+@media(max-width: 560px) {
+    #hArticle {
+        padding: 1em 3em 1em 3em;
+    }
+    body > #hArticle > p {
         display: none;
     }
     h2 {
@@ -267,13 +298,21 @@ footer > section#footer2 > p {
     #ps {
         margin: 0;
     }
-    #hArticle {
-        padding: 0.5em;
-    }
 }
 @media(max-width: 460px) {
-    #mainNav > img {
-        display: none;
+    #mainNav {
+        grid-template-columns: 100%;
+        grid-template-rows: min-content;
+    }
+    #logo {
+        width: 100%;
+    }
+    #hArticle {
+        padding: 1em;
+    }
+    h1 {
+        padding: 0 0 1em 0;
+        font-size: 2.5rem;
     }
     h1 > span#asc {
         display: contents;
