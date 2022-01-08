@@ -30,6 +30,21 @@ h3 {
     font-family: 'Oswald', sans-serif;
     font-size: 1.75rem;
 }
+h4 {
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+}
+h5 {
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: underline;
+    text-shadow: 0 0 0.1em #1a1a1a;
+}
 p {
     font-size: 1rem;
 }
@@ -113,12 +128,12 @@ li.active {
 #hArticle {
     padding: 3em 3em 1em 3em;
     display: grid;
-    max-width: 140ch;
     justify-self: center;
 }
 #hArticle > p {
     line-height: 1.5em;
     padding: 0 1em 1em 1em;
+    max-width: 140ch;
 }
 #ps {
     margin: 0 3em;
@@ -153,10 +168,12 @@ li.active {
     border: #f1f1eb solid;
     border-radius: 0.8em;
     box-shadow: 0 0 0.2em #000000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
 }
 #catalog {
     margin: 1em;
-    padding: 1em;
+    padding: 2em;
     box-shadow: 0 0 0.8em #b4b2b2;
     border-radius: 0.18em;
     overflow: hidden;
@@ -164,6 +181,45 @@ li.active {
     display: grid;
     grid-template-rows: min-content 1fr;
     color: #CBCBD3;
+}
+#catalog h4 {
+    width: max-content;
+    padding: 0.2em 1em;
+    font-weight: 500;
+    color: #272626;
+    background: #f1f1eb;
+    border-radius: 0.5em;
+}
+#catalog h5 {
+    font-weight: 400;
+    text-decoration: underline;
+    text-shadow: 0 0 0.1em #1a1a1a;
+}
+#catalog > ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    gap: 1em;
+}
+#catalog > ul > li{
+    flex: 1 1 auto;
+}
+#catalog .catalogSection > ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    gap: 1em;
+}
+#catalog .catalogGroup > ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    gap: 0.2em;
+}
+#catalog .catalogGroup > ul > li {
+    font-size: 0.8rem;
 }
 footer {
     width: 100%;
@@ -300,18 +356,15 @@ footer > section#footer2 > p {
     }
 }
 @media(max-width: 460px) {
-    #mainNav {
-        grid-template-columns: 100%;
-        grid-template-rows: min-content;
-    }
-    #logo {
-        width: 100%;
+    nav {
+        display: none;
     }
     #hArticle {
         padding: 1em;
+        justify-self: center;
     }
     h1 {
-        padding: 0 0 1em 0;
+        padding: 0;
         font-size: 2.5rem;
     }
     h1 > span#asc {
