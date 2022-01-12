@@ -179,12 +179,13 @@ li.active {
     overflow: hidden;
     background:  #272626;
     display: grid;
-    grid-template-rows: min-content 1fr;
     color: #CBCBD3;
+    font-size: 0.8rem;
 }
 #catalog h4 {
     width: max-content;
     padding: 0.2em 1em;
+    margin: 0.5em 0;
     font-weight: 500;
     color: #272626;
     background: #f1f1eb;
@@ -194,32 +195,45 @@ li.active {
     font-weight: 400;
     text-decoration: underline;
     text-shadow: 0 0 0.1em #1a1a1a;
+    padding: 0.5em 0;
 }
 #catalog > ul {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 1 auto;
-    gap: 1em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "signs flags banners awards"
+    "signs flagpoles printing awards";
 }
-#catalog > ul > li{
-    flex: 1 1 auto;
+#catalogSignsSection {
+    grid-area: signs;
 }
-#catalog .catalogSection > ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 0 1 auto;
-    gap: 1em;
+#catalogFlagsSection {
+    grid-area: flags;
 }
-#catalog .catalogGroup > ul {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex: 0 1 auto;
-    gap: 0.2em;
+#catalogFlagpolesSection {
+    grid-area: flagpoles;
 }
-#catalog .catalogGroup > ul > li {
-    font-size: 0.8rem;
+#catalogBannersSection {
+    grid-area: banners;
+}
+#catalogPrintingSection {
+    grid-area: printing;
+}
+#catalogAwardsSection {
+    grid-area: awards;
+}
+.catalogSection > ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, max-content);
+}
+.catalogGroup > ul > li {
+    list-style: disc inside;
+}
+.catalogGroup > ul > li > span {
+    position: relative;
+    left: -0.5em;
 }
 footer {
     width: 100%;
