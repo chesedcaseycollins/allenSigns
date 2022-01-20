@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f1eb;
+    display: grid;
+    width: 100%;
+}
+h1 {
+    padding: 0 1em 0.7em 1em;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+}
+h2 {
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+}
+h3 {
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.75rem;
+}
+h4 {
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+}
+h5 {
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: underline;
+    text-shadow: 0 0 0.1em #1a1a1a;
+}
+p {
+    font-size: 1rem;
+}
+button {
+    color: #f1f1eb;
+    background: #40b374;
+    padding: 0.1em 0.8em;
+    margin: 0.2em 0 1em 0;
+    width: max-content;
+    border: #40b374 solid;
+    border-radius: 0.8em;
+    box-shadow: 0 0 0.2em #000000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+}
+nav {
+    display: grid;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 0 0 3em 0;
+}
+#mainNav {
+    width: 100%;
+    background: #272626;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: 4em;
+}
+#mainNav > img {
+    box-shadow: 0 0 0.5em black;
+    z-index: 11;
+}
+#mainNav > ul {
+    display: grid;   
+    grid-template-columns: repeat(4, auto);
+    box-shadow: 0 0 0.5em black;
+}
+#mainNav > ul > li {
+    text-align: center;
+    display: grid;
+}
+#mainNav > ul > li > a {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: #CBCBD3;
+    text-transform: uppercase;
+}
+#mainNav > ul > li > a:hover {
+    color: white
+}
+#mainNav > ul > li > a > span {
+    padding: 0.5em;
+}
+#mainNav > ul > li.tab {
+    border-bottom: solid;
+    border-bottom-width: 0.3em;
+    border-color: #CBCBD3;
+}
+#secondaryNav {
+    background: #272626;
+}
+.navSubItems {
+    display: none;
+}
+#showcase {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+#showcase > img {
+    width: max(40em, 100%);
+}
+#product > ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background: #272626;
+    color: #CBCBD3;
+}
+#product > ul > li {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+li.active {
+    padding: 0.5em 0;
+    background: #f1f1eb;
+    color: #272626;
+    font-size: 1.5em;
+}
+#hArticle {
+    padding: 3em 3em 1em 3em;
+    display: grid;
+    justify-self: center;
+}
+#hArticle > p {
+    line-height: 1.5em;
+    padding: 0 1em 1em 1em;
+    max-width: 140ch;
+}
+#services {    
+    padding: 1em;
+    display: grid;
+    gap: 1em;
+    width: 100%;
+}
+#services > section > p {   
+    padding: 1em;
+}
+#imgDisplay {
+    justify-self: center;
+    margin: 0 0 3em 0;
+    display: grid;
+}
+#gallery {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    height: min-content;
+    margin: 1px;
+}
+
+#gallery > li {
+    list-style: none;
+    line-height: 0;
+}
+
+#placeholder {
+    margin: 1px;
+}
+
+#description {
+    margin-top: 1em;
+    grid-column: 2/3;
+}
+footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: min-content min-content;
+    background: #272626;
+}
+footer > section {
+    grid-row: 1/2;
+    padding: 1em;
+    box-shadow: 0 0 0.2em #000000 inset;
+}
+footer section {
+    display: grid;
+}
+footer > section > section > span {
+    font-size: 0.8rem;
+}
+footer > section#footer2 {
+    color: #5A5C5E;
+    font-size: 0.7rem;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr min-content;
+}
+footer > section#footer2 > ul {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+    padding: 0 0 2em 0;
+}
+footer > section#footer2 > ul > li {
+    padding: 1em;
+    text-align: center;
+}
+footer > section#footer2 > ul > li:nth-of-type(1), footer > section#footer2 > ul > li:nth-of-type(2), footer > section#footer2 > ul > li:nth-of-type(3) {
+    grid-row: 1/2;
+}
+footer > section#footer2 > ul > li:nth-of-type(4), footer > section#footer2 > ul > li:nth-of-type(5) {
+    grid-row: 2/3;
+}
+footer > section#footer2 > ul > li:nth-of-type(1) {
+    grid-column: 1/3;
+}
+footer > section#footer2 > ul > li:nth-of-type(2) {
+    grid-column: 3/5;
+}
+footer > section#footer2 > ul > li:nth-of-type(3) {
+    grid-column: 5/7;
+}
+footer > section#footer2 > ul > li:nth-of-type(4) {
+    grid-column: 2/4;
+}
+footer > section#footer2 > ul > li:nth-of-type(5) {
+    grid-column: 4/6;
+}
+footer > section#footer2 > p {
+    grid-column: 1/-1;
+}
+@media(max-width: 870px) {
+    #mainNav {
+        grid-template-rows: 1fr;
+    }
+    #mainNav {
+        box-shadow: 0 0 0.5em black;
+    }
+    #mainNav > ul {
+        display: none;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 655px) {
+    nav {
+        padding: 0 0 1em 0;
+    }
+    #showcase {
+        display: none;
+    }
+    #hArticle{
+        justify-self: start;
+        padding: 3em 3em 1em 3em;
+    }
+    h1 {
+        padding: 0 0 0.5em 0;
+    }
+    h1 > span#asc, h1 > span#dash {
+        display: none;
+    }
+}
+@media(max-width: 560px) {
+    #hArticle {
+        padding: 1em 3em 1em 3em;
+    }
+    body > #hArticle > p {
+        display: none;
+    }
+    h2 {
+        display: none;
+    }
+}
+@media(max-width: 460px) {
+    nav {
+        display: none;
+    }
+    #hArticle {
+        padding: 1em;
+        justify-self: center;
+    }
+    h1 {
+        padding: 0;
+        font-size: 2.5rem;
+    }
+    h1 > span#asc {
+        display: contents;
+    }
+    h1 > span#soak {
+        display: none;
+    }
+}

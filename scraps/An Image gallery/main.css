@@ -1,0 +1,48 @@
+* {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+head {
+    display: none;
+}
+
+body {
+    color: white;
+    background: black;
+}
+
+h1 {
+    font-size: 3.8rem;
+    margin-top: 1em;
+    margin-left: 3.8rem;    
+}
+
+ul {
+    background: white;
+    width: max-content;
+    margin-top: 1rem;
+    margin-left: 3.8rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    grid-template-rows: max-content;
+}
+
+li {
+    list-style: none;
+    margin: 1px;
+    grid-row: 1/2;
+}
+
+#placeholder {
+    padding: 1px;
+    margin-left: 3.8rem;
+    background: white;
+}
+
+#description {
+    margin-left: 3.8rem;
+    margin-top: 1em;
+}

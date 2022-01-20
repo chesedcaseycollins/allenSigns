@@ -185,7 +185,7 @@ li.active {
     padding: 1em;
 }
 #catalog {
-    margin: 1em;
+    margin: 1em 0;
     padding: 2em;
     box-shadow: 0 0 0.8em #b4b2b2;
     border-radius: 0.18em;
@@ -252,7 +252,34 @@ li.active {
 }
 .catalogGroup > ul > li > span {
     position: relative;
-    left: -0.5em;
+    left: -0.7em;
+}
+#imgDisplay {
+    justify-self: center;
+    margin: 0 0 3em 0;
+    display: grid;
+}
+#gallery {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    height: min-content;
+    margin: 1px;
+}
+
+#gallery > li {
+    list-style: none;
+    line-height: 0;
+}
+
+#placeholder {
+    margin: 1px;
+}
+
+#description {
+    margin-top: 1em;
+    grid-column: 2/3;
 }
 footer {
     width: 100%;
