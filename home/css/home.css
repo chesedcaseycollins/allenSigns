@@ -2,6 +2,8 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    justify-content: space-around;
+
 }
 h1 > span {
     width: max-content;
@@ -43,10 +45,10 @@ h1 > span {
 }
 #contact {
     width: 100%;
-    margin: 4em auto;
+    margin: 4em 1em;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 4em;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
 }
 @media(max-width: 1000px) {
     #placeholder {
