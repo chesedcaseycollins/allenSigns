@@ -15,7 +15,6 @@ main {
 }
 h1 {
     padding: 1em;
-    margin: auto;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
     font-size: 4rem;
@@ -102,13 +101,15 @@ footer {
 footer > p {
     padding: 2em;
 }
+@media(max-width: 1000px) {
+    nav {
+        display: none;
+    }
+}
 @media(max-width: 870px) {
     nav {
         box-shadow: 0 0 0.5em black;
         grid-template-rows: 1fr;
-    }
-    nav > ul {
-        display: none;
     }
     h1 {
         font-size: 3rem;

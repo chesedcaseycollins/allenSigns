@@ -1,18 +1,22 @@
-
+h1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+h1 > span {
+    width: max-content;
+}
 #showcase {
-    width: 100%;
+    width: minmax(400px, 100%);
     display: grid;
     justify-content: center;
 }
-#showcase > img {
-    width: minmax(40em, 100%);
-}
 #gallery {
+    grid-row: 3/4;
     background: white;
     display: flex;
-    flex-direction: column;
     gap: 1px;
-    height: min-content;
+    width: min-content;
     margin: 1px;
 }
 
@@ -22,10 +26,10 @@
 }
 #placeholder {
     margin: 1px;
+    width: minmax(460px, min-content);
 }
 #description {
-    margin-top: 1em;
-    grid-column: 2/3;
+    margin: 1em 0;
 }
 #hArticle {
     padding: 3em 3em 1em 3em;
@@ -37,16 +41,25 @@
     padding: 0 1em 1em 1em;
     max-width: 140ch;
 }
+#contact {
+    width: 100%;
+    margin: 4em auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 4em;
+}
+@media(max-width: 1000px) {
+    #placeholder {
+        width: 654px;
+    }
+}
 @media(max-width: 655px) {
-    #showcase {
-        display: none;
+    #placeholder {
+        width: 460px;
     }
     #hArticle{
         justify-self: start;
         padding: 3em 3em 1em 3em;
-    }
-    h1 > span#asc, h1 > span#dash {
-        display: none;
     }
 }
 @media(max-width: 560px) {
@@ -58,14 +71,11 @@
     }
 }
 @media(max-width: 460px) {
+    #placeholder {
+        width: 450px;
+    }
     #hArticle {
         padding: 1em;
         justify-self: center;
-    }
-    h1 > span#asc {
-        display: contents;
-    }
-    h1 > span#soak {
-        display: none;
     }
 }
