@@ -1,0 +1,25 @@
+#orderFlags {
+    position: absolute;
+    top: 5.7em;
+    right: 1em;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    background: #594ec0;
+    border: #594ec0 solid;
+}
+#orderFlags:hover {
+    background: #6c5fdf;
+    border: #6c5fdf solid;
+}
+#orderFlags:active {
+    color: #a0a0a5;
+    background: #413797;
+    border: #5246c2 solid;
+}
+#orderFlags > span {
+    color: #ffffff;
+    padding: 1em;
+    font-weight: 900;
+}

@@ -1,0 +1,101 @@
+#catalog {
+    margin: 1em 0;
+    padding: 2em;
+    box-shadow: 0 0 0.8em #b4b2b2;
+    border-radius: 0.18em;
+    overflow: hidden;
+    background:  #272626;
+    display: grid;
+    color: #CBCBD3;
+    font-size: 0.8rem;
+}
+#catalog h4 {
+    width: 100%;
+    padding: 0.2em 1em;
+    margin: 0.5em 0;
+    font-weight: 500;
+    color: #272626;
+    background: #f1f1eb;
+    border-radius: 0.5em;
+}
+#catalog h5 {
+    font-weight: 400;
+    text-decoration: underline;
+    text-shadow: 0 0 0.1em #1a1a1a;
+    padding: 0.5em 0;
+}
+#catalog > ul {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "signs flags   flags   flags    flagpoles flagpoles flagpoles"
+    "signs banners banners printing printing  awards    awards";
+}
+#catalog > ul > li {
+    margin: 1em;
+}
+.catalogSection > ul {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#catalogSignsSection {
+    grid-area: signs;
+}
+#catalogSignsSection > ul, #catalogPrintingSection > ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, max-content);
+}
+#catalogFlagsSection {
+    grid-area: flags;
+}
+#catalogFlagpolesSection {
+    grid-area: flagpoles;
+}
+#catalogBannersSection {
+    grid-area: banners;
+}
+#catalogPrintingSection {
+    grid-area: printing;
+}
+#catalogAwardsSection {
+    grid-area: awards;
+}
+.catalogGroup > ul > li, #catalogPrintingSection ul > li {
+    list-style: disc inside;
+}
+.catalogGroup > ul > li > span {
+    position: relative;
+    left: -0.7em;
+}
+@media(max-width: 1075px) {
+    #catalog > ul {
+        grid-template-areas: 
+        "signs    flags"
+        "signs    flagpoles"
+        "signs    banners"
+        "printing awards";
+    }
+}
+@media(max-width: 750px) {
+    #catalog > ul {
+        grid-template-areas: 
+        "signs"
+        "flags"
+        "flagpoles"
+        "banners"
+        "printing"
+        "awards";
+    }
+    #catalogSignsSection > ul {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+@media(max-width: 655px) {
+    .catalogSection > ul, #catalogSignsSection > ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, max-content);
+    }
+}

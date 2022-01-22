@@ -1,0 +1,9 @@
+
+#messageUs > form {
+    width: 60ch;
+    margin: auto;
+    display: grid;
+}
+#messageUs > form > textarea {
+    resize: none;
+}
