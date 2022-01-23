@@ -8,6 +8,7 @@
     z-index: 5;
     background: #594ec0;
     border: #594ec0 solid;
+    box-shadow: 0 0 0.2em #555555;
 }
 #orderFlags:hover {
     background: #6c5fdf;
@@ -22,4 +23,9 @@
     color: #ffffff;
     padding: 1em;
     font-weight: 900;
+}
+@media(max-width: 1000px) {
+    #orderFlags {
+        position: static;
+    }
 }

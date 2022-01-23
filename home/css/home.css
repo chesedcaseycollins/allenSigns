@@ -40,19 +40,65 @@ h1 > span {
 }
 #hArticle > p {
     line-height: 1.5em;
-    padding: 0 1em 1em 1em;
+    background: white;
+    padding: 2em;
+    box-shadow: 0 0 0.2em #555555;
     max-width: 140ch;
 }
 #contact {
     width: 100%;
-    margin: 4em 1em;
+    margin: 4em 0;
+    padding: 0 4em;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "cs  design fab"
+    "loc loc    loc";
     gap: 1em;
+}
+#contact > div {
+    background: white;
+    padding: 2em;
+    box-shadow: 0 0 0.2em #555555;
+}
+#contactGeneral {
+    display: none;
+    grid-area: general;
+}
+#contactCService {
+    grid-area: cs;
+}
+#contactDesign{
+    grid-area: design;
+}
+#contactFabInst{
+    grid-area: fab;
+}
+#contactLocation {
+    grid-area: loc;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#contactLocation > iframe {
+    width: 10em;
+    height: 10em;
 }
 @media(max-width: 1000px) {
     #placeholder {
         width: 654px;
+    }
+    #soak {
+        display: none;
+    }
+}
+@media(max-width: 855px) {
+    #contact {
+        grid-template-areas: "general" "loc";
+    }
+    #contactGeneral {
+        display: grid;
+    }
+    #contactCService, #contactDesign, #contactFabInst {
+        display: none;
     }
 }
 @media(max-width: 655px) {
