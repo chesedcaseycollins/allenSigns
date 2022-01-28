@@ -51,8 +51,9 @@ h1 > span {
     padding: 0 4em;
     display: grid;
     grid-template-areas: 
-    "cs  design fab"
-    "loc loc    loc";
+    "title title  title"
+    "cs    design fab"
+    "loc   loc    loc";
     gap: 1em;
 }
 #contact > div {
@@ -92,7 +93,7 @@ h1 > span {
 }
 @media(max-width: 855px) {
     #contact {
-        grid-template-areas: "general" "loc";
+        grid-template-areas: "title" "general" "loc";
     }
     #contactGeneral {
         display: grid;
