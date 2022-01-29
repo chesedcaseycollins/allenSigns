@@ -58,8 +58,21 @@ h1 > span {
 }
 #contact > div {
     background: white;
-    padding: 2em;
+    padding: 1em;
     box-shadow: 0 0 0.2em #555555;
+}
+#contact > div > ul {
+    padding: 1em;
+
+}
+#contact > div > ul > li {
+    display: grid;
+    grid-template-columns: min-content auto;
+    gap: 1em;
+
+}
+#contactCService, #contactDesign, #contactFabInst {
+    display: grid;
 }
 #contactGeneral {
     display: none;
