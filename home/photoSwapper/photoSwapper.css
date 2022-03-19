@@ -105,3 +105,13 @@
         max-width: 480px;
     }
 }
+
+@media(max-width: 560px) {
+    #imgContainer{
+        width: 260px;
+    }
+
+    #swapperIMG {
+        max-width: 260px;
+    }
+}
