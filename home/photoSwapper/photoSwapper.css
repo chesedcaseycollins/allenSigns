@@ -78,7 +78,7 @@
 @media(max-width: 815px) {
     #photoSwapper {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 426px min-content min-content;
+        grid-template-rows: 319.5px min-content min-content;
         grid-template-areas: 
         "pic pic"
         "lb rb"
@@ -96,5 +96,12 @@
 
     #photoSwapper .left, #photoSwapper .right {
         justify-self: center;
+    }
+    #imgContainer{
+        width: 480px;
+    }
+
+    #swapperIMG {
+        max-width: 480px;
     }
 }
