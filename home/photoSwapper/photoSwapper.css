@@ -107,6 +107,9 @@
 }
 
 @media(max-width: 560px) {
+    #photoSwapper {
+        grid-template-rows: 173.06px min-content min-content;
+    }
     #imgContainer{
         width: 260px;
     }
