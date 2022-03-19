@@ -1,0 +1,94 @@
+#contact {
+    width: 100%;
+    margin: 4em 0;
+    padding: 0 4em;
+    display: grid;
+    grid-template-areas: 
+    "title title  title"
+    "cs    design fab"
+    "loc   loc    loc";
+    gap: 1em;
+}
+#contact > div {
+    background: white;
+    padding: 1em;
+    box-shadow: 0 0 0.2em #555555;
+}
+#contact > div > ul {
+    padding: 1em;
+
+}
+#contact > div > ul > li {
+    display: grid;
+    grid-template-columns: 10em auto;
+    gap: 1em;
+    padding: 0.5em;
+}
+#contact > div > ul > li > h5 {
+    text-align: center;
+}
+#contactCService, #contactDesign, #contactFabInst {
+    display: grid;
+}
+#contactGeneral {
+    display: none;
+    grid-area: general;
+}
+#contactCService {
+    grid-area: cs;
+}
+#contactDesign{
+    grid-area: design;
+}
+#contactFabInst{
+    grid-area: fab;
+}
+#contactLocation {
+    grid-area: loc;
+    padding: 0 0 5em 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+#contactLocation > h4 {
+    grid-column: 1/-1;
+    
+}
+#contactLocation > section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: auto;
+    gap: 1em;
+}
+#contactLocation > section > div.address > h5 {
+    padding: 0.7em 0;
+}
+#contactLocation > section > div.address > p {
+    padding: 0.2em 0;
+}
+#contactLocation > section > iframe {
+    background: #1a1a1a;
+    width: 15em;
+    height: 15em;
+    padding: 1em;
+}
+@media(max-width: 1400px) {
+    #contactLocation > section > iframe {
+        background: #1a1a1a;
+        width: 10em;
+        height: 10em;
+    }
+    #contact {
+        grid-template-areas: "title" "general" "loc";
+    }
+    #contactGeneral {
+        display: grid;
+    }
+    #contactCService, #contactDesign, #contactFabInst {
+        display: none;
+    }
+    #contactLocation {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+#photoSwapper {
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: min-content auto min-content;
+    grid-template-rows: 426px min-content;
+    justify-content: center;
+    align-items: center;
+    height: min-content;
+}
+
+#imgContainer {
+    width: 960px;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#photoSwapper .swapperBTN {
+    padding: 2em 1em;
+    height: max-content;
+    font-family: 'Titan One', cursive;
+    font-size: 2em;
+    cursor: default;
+    color: #414040;
+    height: 100%;
+    user-select: none;
+}
+
+#photoSwapper .swapperBTN:hover {
+   color: #747272;
+}
+
+#photoSwapper .left {
+    justify-self: start;
+}
+
+#photoSwapper .right {
+    justify-self: end;
+}
+
+#photoSwapper > p {
+    margin: 1em 0;
+    grid-column: 2/3;
+    justify-self: center;
+}
+
+@media(max-width: 1120px) {
+    #imgContainer{
+        width: 640px;
+    }
+
+    #swapperIMG {
+        max-width: 640px;
+    }
+}
