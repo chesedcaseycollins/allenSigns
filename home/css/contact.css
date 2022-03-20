@@ -91,7 +91,7 @@ div#contactLocation {
 }
 @media(max-width: 580px) {
     #contact {
-        padding: 0 2em;
+        padding: 0 0.5em;
     }
     #contactLocation > section {
         grid-template-columns: 1fr;
