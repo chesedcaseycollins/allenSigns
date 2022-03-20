@@ -1,3 +1,4 @@
+/*This file is for anything unique to the home page that is kind of general.*/
 
 h1 {
     padding: 1em .5em .5em .5em;
@@ -13,8 +14,10 @@ h1 > span {
 }
 #hArticle {
     padding: 3em 0 1em 0;
+    margin: auto;
     display: grid;
     justify-self: center;
+    justify-content: center;
     width: 90vw;
 }
 #hArticle > p {

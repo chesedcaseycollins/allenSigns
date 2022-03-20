@@ -43,9 +43,9 @@
 #contactFabInst{
     grid-area: fab;
 }
-#contactLocation {
+div#contactLocation {
     grid-area: loc;
-    padding: 0 0 5em 0;
+    padding-bottom: 3em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
@@ -60,9 +60,6 @@
     align-items: center;
     margin: auto;
     gap: 1em;
-}
-#contactLocation > section > div.address > h5 {
-    padding: 0.7em 0;
 }
 #contactLocation > section > div.address > p {
     padding: 0.2em 0;
@@ -88,7 +85,18 @@
     #contactCService, #contactDesign, #contactFabInst {
         display: none;
     }
-    #contactLocation {
+    div#contactLocation {
         grid-template-columns: 1fr;
+    }
+}
+@media(max-width: 580px) {
+    
+    #contactLocation > section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+    #contact > div > ul > li {
+        grid-template-columns: 5em auto;
     }
 }

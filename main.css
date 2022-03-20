@@ -1,3 +1,5 @@
+/*This file is for everything similar between all the pages. If you are looking for something only shared between a few of the pages and not all go to the general css folder.*/
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 * {
     box-sizing: border-box;
