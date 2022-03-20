@@ -93,6 +93,11 @@ div#contactLocation {
     #contact {
         padding: 0 0.5em;
     }
+
+    div#contactGeneral > ul {
+        padding: 0;
+    }
+
     #contactLocation > section {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
