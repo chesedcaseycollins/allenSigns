@@ -64,10 +64,6 @@
 .catalogGroup > ul > li, #catalogPrintingSection ul > li {
     list-style: disc inside;
 }
-.catalogGroup > ul > li > span {
-    position: relative;
-    left: -0.7em;
-}
 @media(max-width: 1075px) {
     #catalog > ul {
         grid-template-areas: 
