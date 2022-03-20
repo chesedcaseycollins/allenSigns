@@ -90,12 +90,15 @@ div#contactLocation {
     }
 }
 @media(max-width: 580px) {
-    
+    #contact {
+        padding: 0 2em;
+    }
     #contactLocation > section {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
 
     }
+
     #contact > div > ul > li {
         grid-template-columns: 5em auto;
     }
