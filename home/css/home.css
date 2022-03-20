@@ -1,7 +1,7 @@
 /*This file is for anything unique to the home page that is kind of general.*/
 
 h1 {
-    padding: 1em .5em .5em .5em;
+    padding: 1em 0 .5em 0;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -39,6 +39,7 @@ h1 > span {
         padding: 3em 3em 1em 3em;
     }
 }
+
 @media(max-width: 560px) {
     #hArticle {
         padding: 1em 3em 1em 3em;

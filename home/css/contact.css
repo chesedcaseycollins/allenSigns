@@ -89,13 +89,10 @@ div#contactLocation {
         grid-template-columns: 1fr;
     }
 }
+
 @media(max-width: 580px) {
     #contact {
         padding: 0 0.5em;
-    }
-
-    div#contactGeneral > ul {
-        padding: 0;
     }
 
     #contactLocation > section {
@@ -106,5 +103,16 @@ div#contactLocation {
 
     #contact > div > ul > li {
         grid-template-columns: 5em auto;
+    }
+}
+
+@media(max-width: 380px) {
+    #contact > div#contactGeneral > ul > li {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    #contact > div#contactGeneral > ul > li > h5 {
+        text-align: start;
     }
 }

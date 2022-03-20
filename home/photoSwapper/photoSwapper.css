@@ -120,3 +120,16 @@
         max-width: 260px;
     }
 }
+
+@media(max-width: 290px) {
+    #photoSwapper {
+        grid-template-rows: 119.81px min-content min-content;
+    }
+    #imgContainer{
+        width: 180px;
+    }
+
+    #swapperIMG {
+        max-width: 180px;
+    }
+}
