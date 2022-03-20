@@ -42,15 +42,6 @@ h1 > span {
 
 @media(max-width: 560px) {
     #hArticle {
-        padding: 1em 3em 1em 3em;
-    }
-    body > #hArticle > p {
         display: none;
-    }
-}
-@media(max-width: 460px) {
-    #hArticle {
-        padding: 1em;
-        justify-self: center;
     }
 }
