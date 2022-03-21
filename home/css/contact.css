@@ -48,7 +48,7 @@ div#contactLocation {
     padding-bottom: 3em;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1em;
+    gap: 2em;
 }
 #contactLocation > h4 {
     grid-column: 1/-1;
@@ -85,6 +85,9 @@ div#contactLocation {
     #contactCService, #contactDesign, #contactFabInst {
         display: none;
     }
+}
+
+@media(max-width: 960px) {
     div#contactLocation {
         grid-template-columns: 1fr;
     }
