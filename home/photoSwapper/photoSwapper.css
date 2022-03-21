@@ -7,7 +7,7 @@
     justify-self: center;
     display: grid;
     grid-template-columns: min-content auto min-content;
-    grid-template-rows: 426px min-content;
+    grid-template-rows: 50vh min-content;
     grid-template-areas: 
         "lb pic rb"
         ". desc .";
@@ -74,7 +74,6 @@
 @media(max-width: 815px) {
     #photoSwapper {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 319.5px min-content min-content;
         grid-template-areas: 
         "pic pic"
         "lb rb"
@@ -95,14 +94,20 @@
     }
 }
 
-@media(max-width: 560px) {
+@media(max-width: 600px) { 
     #photoSwapper {
-        grid-template-rows: 173.06px min-content min-content;
+         grid-template-rows: 40vh min-content;
     }
 }
 
-@media(max-width: 290px) {
+@media(max-width: 400px) { 
     #photoSwapper {
-        grid-template-rows: 119.81px min-content min-content;
+         grid-template-rows: 30vh min-content;
+    }
+}
+
+@media(max-width: 300px) { 
+    #photoSwapper {
+         grid-template-rows: 20vh min-content;
     }
 }

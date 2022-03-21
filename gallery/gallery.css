@@ -1,0 +1,43 @@
+h1 {
+    display: none;
+}
+
+main {
+    grid-template-columns: 1fr 1fr;
+}
+
+#topBar {
+    grid-column: 1/-1;
+}
+
+.imageList {
+    margin-top: 7em;
+    padding: 2em;
+    display: grid;
+}
+
+.imageList > ul {
+    display: grid;
+}
+
+.imageList > ul > li {
+    display: grid;
+}
+
+.imageList > ul > li > a {
+    width: max-content;
+}
+
+#imagesL {
+    justify-self: start;
+}
+
+#imagesR {
+    justify-self: end;
+    justify-content: end;
+}stify-self: end;
+}
+
+footer {
+    margin-bottom: 30vh;
+}
