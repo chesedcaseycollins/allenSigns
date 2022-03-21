@@ -88,14 +88,10 @@
         grid-template-columns: auto auto;
     }
 }
-@media(max-width: 700px) {
+@media(max-width: 655px) {
     .catalogSection > ul, #catalogSignsSection > ul {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, max-content);
-    }
-
-    #catalog {
-        display: none;
     }
 }
