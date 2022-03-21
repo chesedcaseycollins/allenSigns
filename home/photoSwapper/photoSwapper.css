@@ -96,18 +96,26 @@
 
 @media(max-width: 600px) { 
     #photoSwapper {
-         grid-template-rows: 40vh min-content;
+         grid-template-rows: 50vh min-content;
+    }
+
+    #imgContainer {
+        width: 100vw;
+    }
+    
+    #imgContainer > img#swapperIMG {
+        max-width: 100vw;
     }
 }
 
 @media(max-width: 400px) { 
     #photoSwapper {
-         grid-template-rows: 30vh min-content;
+         grid-template-rows: 35vh min-content;
     }
 }
 
 @media(max-width: 300px) { 
     #photoSwapper {
-         grid-template-rows: 20vh min-content;
+         grid-template-rows: 25vh min-content;
     }
 }
