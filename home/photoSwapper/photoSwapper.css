@@ -94,7 +94,7 @@
     }
 }
 
-@media(max-width: 600px) { 
+@media(max-width: 650px) { 
     #photoSwapper {
          grid-template-rows: 50vh min-content;
     }
