@@ -2,10 +2,6 @@ h1 {
     display: none;
 }
 
-main {
-    grid-template-columns: 1fr 1fr;
-}
-
 #topBar {
     grid-column: 1/-1;
 }
@@ -16,48 +12,42 @@ main {
     display: grid;
 }
 
+.imageList img {
+   height: 25vh;
+}
+
 .imageList > ul {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 1em;
 }
 
 .imageList > ul > li {
     display: grid;
+    cursor: pointer;
 }
 
-.imageList > ul > li > a {
-    width: max-content;
+.display {
+    width: 100%;
+    background-color: #1b1b1b;
+    padding: 3em;
 }
 
-#imagesL {
-    justify-self: start;
+.imageList li.display > img {
+    margin: auto;
+    max-width: 70%;
+    height: 60vh;
+    padding: 1em;
 }
 
-#imagesR {
-    justify-self: end;
-    justify-content: end;
+.display > p {
+    padding: 0 10em;
+    margin: 2em auto 2em auto;
+    color: white;
 }
 
-#description {
-    font-size: 2rem;
-    line-height: 1.5em;
-    background: white;
-    padding: 2em;
-    box-shadow: 0 0 0.2em #555555;
-    width: 95vw;
-    height: 25vh;
-    position: fixed;
-    left: 2.5vw;
-    bottom: 3vh;
-}
 footer {
-    margin-bottom: 30vh;
     padding: 2em 0;
-}
-
-@media(max-width: 1600px) {
-
-    .imageList {
-        margin-top: 30em;
-    }
-
 }
