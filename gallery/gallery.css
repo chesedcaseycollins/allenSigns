@@ -7,30 +7,39 @@ h1 {
 }
 
 .imageList {
-    margin-top: 7em;
+    background: black;
+    margin: 7em 2em 2em 2em;
     padding: 2em;
     display: grid;
 }
 
 .imageList img {
-   height: 25vh;
+   /*height: 25vh;*/
+   width: 400px;
+   object-fit: cover;
 }
 
 .imageList > ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: start;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: start;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
     gap: 1em;
 }
 
 .imageList > ul > li {
     display: grid;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .display {
     width: 100%;
+    grid-column: 1/-1;
+    grid-row: span 3;
     background-color: #1b1b1b;
     padding: 3em;
 }
@@ -39,6 +48,7 @@ h1 {
     margin: auto;
     max-width: 70%;
     height: 60vh;
+    width: auto;
     padding: 1em;
 }
 
