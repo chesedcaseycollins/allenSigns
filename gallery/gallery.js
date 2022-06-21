@@ -17,6 +17,11 @@ liA.addEventListener('click', () => {
         items[i].classList.remove('display');
     }
     liA.classList.add('display');
+    liA.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "center"
+    })
 });
 
 liB.addEventListener('click', () => {
@@ -28,6 +33,11 @@ liB.addEventListener('click', () => {
         items[i].classList.remove('display');
     }
     liB.classList.add('display');
+    liB.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "center"
+    })
 });
 
 liC.addEventListener('click', () => {
@@ -39,6 +49,11 @@ liC.addEventListener('click', () => {
         items[i].classList.remove('display');
     }
     liC.classList.add('display');
+    liC.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "center"
+    })
 });
 
 liL.addEventListener('click', () => {
@@ -50,4 +65,9 @@ liL.addEventListener('click', () => {
         items[i].classList.remove('display');
     }
     liL.classList.add('display');
+    liL.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "center"
+    })
 });

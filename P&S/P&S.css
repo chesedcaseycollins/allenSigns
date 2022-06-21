@@ -1,3 +1,6 @@
+h1 {
+    display: none;
+}
 
 #product > ul {
     width: 100%;
@@ -30,8 +33,11 @@
     overflow: hidden;
     background:  #272626;
     display: grid;
-    grid-template-rows: min-content 1fr;
+    grid-template-rows: min-content  min-content 1fr;
     color: #CBCBD3;
+}
+#ps > ul > li > img {
+    width: 100%;
 }
 #ps > ul > li > p {
     padding: 1.5em 0 1em 0;
