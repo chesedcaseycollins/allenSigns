@@ -22,11 +22,10 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
 #imgContainer > img#swapperIMG {
-    max-width: 80vw;
+    height: 60vh;
 }
 
 #photoSwapper .swapperBTN {
