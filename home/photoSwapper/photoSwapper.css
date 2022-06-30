@@ -7,7 +7,7 @@
     justify-self: center;
     display: grid;
     grid-template-columns: min-content auto min-content;
-    grid-template-rows: 60vh min-content;
+    grid-template-rows: auto min-content;
     grid-template-areas: 
         "lb pic rb"
         ". desc .";
@@ -18,6 +18,7 @@
 
 #imgContainer {
     width: 80vw;
+    height: 30em;
     grid-area: pic;
     display: grid;
     justify-content: center;
@@ -25,7 +26,7 @@
 }
 
 #imgContainer > img#swapperIMG {
-    height: 60vh;
+    max-width: 100%;
 }
 
 #photoSwapper .swapperBTN {
