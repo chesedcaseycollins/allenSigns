@@ -61,6 +61,9 @@ p {
     z-index: 13;
     grid-row: 1/2;
 }
+#menu {
+    display: none;
+}
 #logo {
     box-shadow: 0 0 0.3em black;
     float: left;
@@ -106,8 +109,11 @@ footer > p {
     padding: 0.5em 2em;
 }
 @media(max-width: 1000px) {
-    #topBar {
+    #topBar > nav {
         display: none;
+    }
+    #menu {
+        display: grid;
     }
 }
 @media(max-width: 870px) {
