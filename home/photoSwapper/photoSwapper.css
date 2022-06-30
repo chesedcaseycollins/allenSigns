@@ -7,7 +7,7 @@
     justify-self: center;
     display: grid;
     grid-template-columns: min-content auto min-content;
-    grid-template-rows: 70em min-content;
+    grid-template-rows: 60vh min-content;
     grid-template-areas: 
         "lb pic rb"
         ". desc .";
